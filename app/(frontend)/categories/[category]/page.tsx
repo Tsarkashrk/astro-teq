@@ -1,7 +1,11 @@
 import Card from '@/components/Card/Card';
 import data from '@/lib/data';
 
-const Category = ({ params }: { params: { category: string } }) => {
+type CategoryProps = {
+  params: {category: string}
+}
+
+const Category = ({ params }: CategoryProps) => {
   const filteredProducts = data.products.filter((product) => product.category === params.category);
 
   return (

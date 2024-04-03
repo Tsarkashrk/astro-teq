@@ -5,7 +5,11 @@ import Image from 'next/image'
 
 import data from '@/lib/data'
 
-const Product = ({ params }: { params: { slug: string } }) => {
+type ProductProps = {
+  params: {slug: string}
+}
+
+const Product = ({ params }: ProductProps) => {
   const chosenProduct = data.products.find((product) => product.slug == params.slug)
 
   const [imageNumber, setImageNumber] = useState<number>(0)
