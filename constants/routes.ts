@@ -1,0 +1,15 @@
+export enum RoutesEnum {
+  Home = '/',
+  Login = '/login',
+  Register = '/register',
+  Favorites = '/favorites',
+  Cart = '/cart',
+  Profile = '/profile',
+  Categories = '/categories',
+  Keyboards = `${Categories}/keyboards`,
+  Mouses = `${Categories}/mouses`,
+  Pads = `${Categories}/pads`,
+  Keycaps = `${Categories}/keycaps`,
+  Cabels = `${Categories}/cabels`,
+  Headphones = `${Categories}/headphones`,
+}

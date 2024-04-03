@@ -1,0 +1,53 @@
+.product {
+  padding: 2rem;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+  box-shadow: $box-shadow;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+    max-width: $card-max-width;
+    margin: 0 auto;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row;
+    gap: $gap-secondary;
+  }
+
+  &__image {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-darker;
+
+    &--small {
+      max-width: 7rem;
+      height: auto;
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__subimages {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-secondary;
+    cursor: pointer;
+  }
+
+  &__name {
+    font-family: $secondary-font-semibold;
+    font-size: $xl-font-size;
+  }
+
+  &__brand {
+    font-family: $secondary-font-semibold;
+    font-size: $md-font-size;
+    color: $primary-color-darker;
+  }
+}

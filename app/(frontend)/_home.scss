@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-secondary;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+
+  &__products {
+    display: flex;
+    gap: $gap-primary;
+  }
+}

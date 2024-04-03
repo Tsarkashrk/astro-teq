@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: $font-color;
+  box-sizing: border-box;
+}
+
+svg {
+  transition: $transition;
+}
+
+section {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2rem !important;
+}

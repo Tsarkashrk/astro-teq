@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__text {
+    font-family: $gteesti-font-medium;
+    font-size: $xxm-font-size;
+    transition: $transition;
+
+    &:hover {
+      color: $primary-color-darker;
+    }
+  }
+}

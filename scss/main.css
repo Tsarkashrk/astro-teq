@@ -1,0 +1,457 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #d9e8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  box-sizing: border-box;
+}
+
+svg {
+  transition: all 0.25s ease;
+}
+
+section {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2rem !important;
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins Regular"), local("Poppins-Regular"), url(/fonts/Poppins/Poppins-Regular.woff2) format("woff2"), url(/fonts/Poppins/Poppins-Regular.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PoppinsMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Poppins Medium"), local("Poppins-Medium"), url(/fonts/Poppins/Poppins-Medium.woff2) format("woff2"), url(/fonts/Poppins/Poppins-Medium.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PoppinsSemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url(/fonts/Poppins/Poppins-SemiBold.woff2) format("woff2"), url(/fonts/Poppins/Poppins-SemiBold.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PoppinsBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Poppins Bold"), local("Poppins-Bold"), url(/fonts/Poppins/Poppins-Bold.woff2) format("woff2"), url(/fonts/Poppins/Poppins-Bold.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MontserratRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(/fonts/Montserrat/Montserrat-Regular.woff2) format("woff2"), url(/fonts/Montserrat/Montserrat-Regular.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MontserratMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(/fonts/Montserrat/Montserrat-Medium.woff2) format("woff2"), url(/fonts/Montserrat/Montserrat-Medium.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MontserratSemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(/fonts/Montserrat/Montserrat-SemiBold.woff2) format("woff2"), url(/fonts/Montserrat/Montserrat-SemiBold.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MontserratBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(/fonts/Montserrat/Montserrat-Bold.woff2) format("woff2"), url(/fonts/Montserrat/Montserrat-Bold.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GteestiRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Gteesti Regular"), local("Gteesti-Regular"), url(/fonts/GT-Eesti/gteestiprodisplay_regular.woff2) format("woff2"), url(/fonts/GT-Eesti/gteestiprodisplay_regular.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GteestiMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Gteesti Medium"), local("Gteesti-Medium"), url(/fonts/GT-Eesti/gteestiprodisplay_medium.woff2) format("woff2"), url(/fonts/GT-Eesti/gteestiprodisplay_medium.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GteestiBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Gteesti Bold"), local("Gteesti-Bold"), url(/fonts/GT-Eesti/gteestiprodisplay_bold.woff2) format("woff2"), url(/fonts/GT-Eesti/gteestiprodisplay_bold.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GteestiUltraBold";
+  font-weight: 900;
+  font-style: normal;
+  src: local("Gteesti UltraBold"), local("Gteesti-UltraBold"), url(/fonts/GT-Eesti/gteestiprodisplay_ultrabold.woff2) format("woff2"), url(/fonts/GT-Eesti/gteestiprodisplay_ultrabold.woff) format("woff");
+  font-display: swap;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+.home__products {
+  display: flex;
+  gap: 2rem;
+}
+
+.product {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+}
+.product__content {
+  display: flex;
+  justify-content: center;
+  gap: 0rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.product__images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.product__image {
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
+}
+.product__image--small {
+  max-width: 7rem;
+  height: auto;
+  transition: all 0.25s ease;
+}
+.product__image--small:hover {
+  transform: scale(1.05);
+}
+.product__subimages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+.product__name {
+  font-family: "PoppinsSemiBold", sans-serif;
+  font-size: 2.8rem;
+}
+.product__brand {
+  font-family: "PoppinsSemiBold", sans-serif;
+  font-size: 2rem;
+  color: #696969;
+}
+
+.category {
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  padding: 0rem 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+  background-color: #ffffff;
+}
+
+.title {
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+}
+.card:hover .card__title {
+  color: #3886fb;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.9rem;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.card__content {
+  padding: 1rem;
+}
+.card__title {
+  font-family: "GteestiRegular", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  transition: all 0.25s ease;
+}
+.card__brand {
+  margin-top: 1rem;
+  font-family: "PoppinsSemiBold", sans-serif;
+  font-size: 1.4rem;
+  color: #b3b3b3;
+}
+.card__colors {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card__color {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid #d0d0d0;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+}
+.card__bottom {
+  margin: 1rem;
+}
+.card__price {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-family: "GteestiMedium", sans-serif;
+  font-size: 2rem;
+}
+.card__buttons {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0.3rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 255);
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.button:hover {
+  background-color: #3886fb;
+}
+.button--clicked {
+  background-color: #1b1b1b;
+}
+.button--clicked:hover {
+  background-color: #696969;
+}
+.button__text {
+  padding-top: 0.4rem;
+  color: #ffffff;
+}
+.button svg {
+  stroke: #ffffff;
+}
+
+.button-solo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 255);
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.button-solo:hover {
+  background-color: #3886fb;
+}
+.button-solo--clicked {
+  background-color: #1b1b1b;
+}
+.button-solo--clicked:hover {
+  background-color: #696969;
+}
+.button-solo svg {
+  stroke: #ffffff;
+}
+
+.footer {
+  font-size: 1.8rem;
+}
+
+.drop-down__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem 0.6rem 1.5rem;
+  border: none;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+  background-color: rgb(0, 0, 255);
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.drop-down__button:hover {
+  background-color: #3886fb;
+}
+.drop-down__text {
+  padding-top: 0.3rem;
+  color: #ffffff;
+}
+.drop-down__modal {
+  position: relative;
+}
+.drop-down svg {
+  stroke: #ffffff;
+}
+
+.modal {
+  position: absolute;
+  top: 1rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal__item:last-child {
+  padding-top: 1rem;
+  border-top: 1px solid #d0d0d0;
+}
+.modal__link {
+  display: flex;
+  align-items: center;
+  padding: 0 1.2rem 0 1rem;
+  border-left: 2px solid transparent;
+  transition: all 0.25s ease;
+}
+.modal__link:hover {
+  border-color: #3886fb;
+}
+.modal__link:hover svg {
+  stroke: #3886fb;
+}
+.modal__link:hover .modal__text {
+  color: #3886fb;
+}
+.modal__text {
+  width: max-content;
+  margin-left: 1rem;
+  padding-top: 0.4rem;
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 1.8rem;
+  transition: all 0.25s ease;
+}
+.modal svg {
+  stroke: #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo__text {
+  font-family: "GteestiMedium", sans-serif;
+  font-size: 2.4rem;
+  transition: all 0.25s ease;
+}
+.logo__text:hover {
+  color: #696969;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid transparent;
+  padding: 1.5rem 0;
+  transition: all 0.25s ease;
+}
+.nav__link:hover {
+  border-color: rgb(0, 0, 255);
+}
+.nav__link:hover svg {
+  stroke: rgb(0, 0, 255);
+}
+
+.search-input {
+  display: flex;
+  max-width: 70rem;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 0px 24px;
+  border-radius: 1rem;
+}
+.search-input__input {
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #ffffff;
+  font-family: "GteestiRegular", sans-serif;
+  font-size: 1.8rem;
+  outline: none;
+}/*# sourceMappingURL=main.css.map */

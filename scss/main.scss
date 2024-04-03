@@ -1,0 +1,29 @@
+// Abstracts
+
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+// Base
+
+@import './base/base';
+@import './base/typography';
+
+// App
+
+@import '../app/\(frontend\)/home';
+@import '../app/\(frontend\)/categories/\[category\]/\[slug\]/product';
+@import '../app/\(frontend\)/categories/\[category\]/category';
+
+// Components
+
+@import '../components/Header/header';
+@import '../components/Title/title';
+@import '../components/Card/card';
+@import '../components/Buttons/Button/button';
+@import '../components/Buttons/ButtonSolo/button-solo';
+@import '../components/Footer/footer';
+@import '../components/DropDown/drop-down';
+@import '../components/Modal/modal';
+@import '../components/Logo/logo';
+@import '../components/Navigation/navigation';
+@import '../components/Inputs/SearchInput/search-input';

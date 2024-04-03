@@ -1,0 +1,80 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  width: 100%;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  background-color: $primary-color;
+  transition: $transition;
+
+  &:hover {
+    .card__title {
+      color: $secondary-color;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.9rem;
+    box-shadow: $box-shadow;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-family: $gteesti-font-regular;
+    font-weight: 100;
+    font-size: $sm-font-size;
+    transition: $transition;
+  }
+
+  &__brand {
+    margin-top: 1rem;
+    font-family: $secondary-font-semibold;
+    font-size: $xxs-font-size;
+    color: $primary-color-dark;
+  }
+
+  &__colors {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__color {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border: $border-style;
+    box-shadow: $box-shadow;
+  }
+
+  &__bottom {
+    margin: 1rem;
+  }
+
+  &__price {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-family: $gteesti-font-medium;
+    font-size: $md-font-size;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0.3rem;
+  }
+}

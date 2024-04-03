@@ -1,0 +1,65 @@
+// gap
+
+$gap-primary: 2rem;
+$gap-secondary: 1rem;
+
+// width
+
+$card-max-width: 120rem;
+
+// padding
+
+// color
+
+$border-color: #d0d0d0;
+$background-color: #d9e8ff;
+$card-background-color: #2f2f2f;
+$primary-color: #ffffff;
+$primary-color-dark: #b3b3b3;
+$primary-color-darker: #696969;
+$secondary-color: #3886fb;
+$secondary-color-dark: rgb(0, 0, 255);
+$button-hover-color: #353535;
+$button-color: #1b1b1b;
+$font-color: #000;
+
+// border
+
+$border-style: 1px solid $border-color;
+$border-radius: 1rem;
+$border-radius-bigger: 2rem;
+$box-shadow-darker: rgba(149, 157, 165, 0.5) 0px 0px 24px;
+$box-shadow: rgba(149, 157, 165, 0.3) 0px 0px 24px;
+
+// font-family
+
+$primary-font-regular: 'MontserratRegular', sans-serif;
+$primary-font-medium: 'MontserratMedium', sans-serif;
+$primary-font-semibold: 'MontserratSemiBold', sans-serif;
+$primary-font-bold: 'MontserratBold', sans-serif;
+
+$secondary-font-regular: 'PoppinsRegular', sans-serif;
+$secondary-font-medium: 'PoppinsMedium', sans-serif;
+$secondary-font-semibold: 'PoppinsSemiBold', sans-serif;
+$secondary-font-bold: 'PoppinsBold', sans-serif;
+
+$gteesti-font-regular: 'GteestiRegular', sans-serif;
+$gteesti-font-medium: 'GteestiMedium', sans-serif;
+$gteesti-font-semibold: 'GteestiBold', sans-serif;
+$gteesti-font-bold: 'GteestiUltraBold', sans-serif;
+
+// font-size
+
+$xxs-font-size: 1.4rem;
+$xs-font-size: 1.6rem;
+$sm-font-size: 1.8rem;
+$md-font-size: 2rem;
+$xm-font-size: 2.2rem;
+$xxm-font-size: 2.4rem;
+$lg-font-size: 2.6rem;
+$xl-font-size: 2.8rem;
+$xxl-font-size: 3rem;
+
+// transition
+
+$transition: all 0.25s ease;

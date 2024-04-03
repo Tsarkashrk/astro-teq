@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+  padding: 0rem 2rem;
+  border-radius: $border-radius-bigger;
+  box-shadow: $box-shadow;
+  background-color: $primary-color;
+}
